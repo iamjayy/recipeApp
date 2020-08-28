@@ -1,17 +1,13 @@
 import React from "react";
 import "./App.css";
-import Recipe from "./components/Recipe";
-import Spaghetti from "../src/img/Spaghetti.jpg";
+import Navbar from "./components/Navbar";
+import RecipeList from "../src/components/RecipeList";
 
 function App() {
   return (
     <div className="App">
-      <Recipe
-        title="pasta"
-        ingredients={["flour", "water"]}
-        instructions="Mix ingredients"
-        img={Spaghetti}
-      />
+      <Navbar />
+      <RecipeList />
     </div>
   );
 }
